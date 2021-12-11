@@ -1,0 +1,16 @@
+{
+  "name": "question3",
+  "version": "1.0.0",
+  "description": "This directory contains a ReactJS application, in which the code snippet from [Question 2](https://github.com/Karan9034/assignment-symbl.ai/tree/master/question2) has been integrated to make a `GET` HTTP request to [mockAPIServer](https://github.com/Karan9034/assignment-symbl.ai/tree/master/question3/mockAPIServer), sort the received response using the id field and display it out on the web page.",
+  "main": "index.js",
+  "scripts": {
+    "install:server": "cd mockAPIServer && npm i",
+    "install:client": "cd reactapp-symblai && npm i",
+    "start": "concurrently \"npm start --prefix mockAPIServer\" \"npm start --prefix reactapp-symblai\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
